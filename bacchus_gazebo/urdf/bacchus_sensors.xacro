@@ -54,7 +54,22 @@
           kinect2_cam_or="0" 
           kinect2_cam_op="0" 
           kinect2_cam_oy="${270*M_PI/180}"/>
+
+  <xacro:kinect kinect2_name="kinect2_top_right" 
+          kinect2_cam_px="0.0" 
+          kinect2_cam_py="-0.10" 
+          kinect2_cam_pz="1.80" 
+          kinect2_cam_or="0" 
+          kinect2_cam_op="${25*M_PI/180}" 
+          kinect2_cam_oy="${270*M_PI/180}"/>
   
+<xacro:kinect kinect2_name="kinect2_top_left" 
+        kinect2_cam_px="0.0" 
+        kinect2_cam_py="0.10" 
+        kinect2_cam_pz="1.80" 
+        kinect2_cam_or="0" 
+        kinect2_cam_op="${25*M_PI/180}" 
+        kinect2_cam_oy="${90*M_PI/180}"/>
 
 </robot>
 
