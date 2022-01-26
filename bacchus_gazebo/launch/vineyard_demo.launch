@@ -20,7 +20,7 @@
   <arg name="use_carrot_planner" default="false"/>
   <arg name="use_omni" default="false"/>
   <arg name="world_2_map_pose" default="0.0 0.0 0.0 0.0 0.0 0.0 1.0" />
-  
+
   <arg name="X_INIT" value="40.0" if="$(arg riseholme_dt)"/>
   <arg name="Y_INIT" value="-40.0" if="$(arg riseholme_dt)"/>
   <arg name="Z_INIT" value="1.2" if="$(arg riseholme_dt)"/>
@@ -96,11 +96,120 @@
       <arg name="verbose"           value="$(arg verbose)"/>
       <arg name="launch_move_base"  value="$(arg launch_move_base)"/>
     </include>
+
+    <include file="$(find bacchus_gazebo)/launch/thorvald.launch" >
+      <arg name="single_robot"      value="false"/>
+      <arg name="robot_name"        value="$(arg robot_name)_003" />
+      <arg name="robot_no"          value="003" />
+      <!-- <arg name="tf_prefix"         value="$(arg robot_name)_2/" /> -->
+      <arg name="x"                 value="$(arg X_INIT)" />
+      <arg name="y"                 value="4.0" />
+      <arg name="z"                 value="$(arg Z_INIT)" />
+      <arg name="robot_model"       value="$(arg robot_model)"/>
+      <arg name="model_extras"      value="$(arg model_extras)"/>
+      <arg name="world_name"        value="$(arg world)"/>
+      <arg name="fake_localisation" value="$(arg fake_localisation)"/>
+      <arg name="nav_map_yaml"      value="$(arg nav_map_yaml)"/>
+      <arg name="rviz_config_file"  value="$(arg rviz_config_file)"/>
+      <arg name="paused"            value="$(arg paused)"/>
+      <arg name="use_sim_time"      value="$(arg use_sim_time)"/>
+      <arg name="gui"               value="$(arg gui)"/>
+      <arg name="debug"             value="$(arg debug)"/>
+      <arg name="verbose"           value="$(arg verbose)"/>
+      <arg name="launch_move_base"  value="$(arg launch_move_base)"/>
+    </include>
+
+    <include file="$(find bacchus_gazebo)/launch/thorvald.launch" >
+      <arg name="single_robot"      value="false"/>
+      <arg name="robot_name"        value="$(arg robot_name)_004" />
+      <arg name="robot_no"          value="004" />
+      <!-- <arg name="tf_prefix"         value="$(arg robot_name)_2/" /> -->
+      <arg name="x"                 value="$(arg X_INIT)" />
+      <arg name="y"                 value="0.0" />
+      <arg name="z"                 value="$(arg Z_INIT)" />
+      <arg name="robot_model"       value="$(arg robot_model)"/>
+      <arg name="model_extras"      value="$(arg model_extras)"/>
+      <arg name="world_name"        value="$(arg world)"/>
+      <arg name="fake_localisation" value="$(arg fake_localisation)"/>
+      <arg name="nav_map_yaml"      value="$(arg nav_map_yaml)"/>
+      <arg name="rviz_config_file"  value="$(arg rviz_config_file)"/>
+      <arg name="paused"            value="$(arg paused)"/>
+      <arg name="use_sim_time"      value="$(arg use_sim_time)"/>
+      <arg name="gui"               value="$(arg gui)"/>
+      <arg name="debug"             value="$(arg debug)"/>
+      <arg name="verbose"           value="$(arg verbose)"/>
+      <arg name="launch_move_base"  value="$(arg launch_move_base)"/>
+    </include>
+
+    <include file="$(find bacchus_gazebo)/launch/thorvald.launch" >
+      <arg name="single_robot"      value="false"/>
+      <arg name="robot_name"        value="$(arg robot_name)_005" />
+      <arg name="robot_no"          value="005" />
+      <!-- <arg name="tf_prefix"         value="$(arg robot_name)_2/" /> -->
+      <arg name="x"                 value="$(arg X_INIT)" />
+      <arg name="y"                 value="-4.0" />
+      <arg name="z"                 value="$(arg Z_INIT)" />
+      <arg name="robot_model"       value="$(arg robot_model)"/>
+      <arg name="model_extras"      value="$(arg model_extras)"/>
+      <arg name="world_name"        value="$(arg world)"/>
+      <arg name="fake_localisation" value="$(arg fake_localisation)"/>
+      <arg name="nav_map_yaml"      value="$(arg nav_map_yaml)"/>
+      <arg name="rviz_config_file"  value="$(arg rviz_config_file)"/>
+      <arg name="paused"            value="$(arg paused)"/>
+      <arg name="use_sim_time"      value="$(arg use_sim_time)"/>
+      <arg name="gui"               value="$(arg gui)"/>
+      <arg name="debug"             value="$(arg debug)"/>
+      <arg name="verbose"           value="$(arg verbose)"/>
+      <arg name="launch_move_base"  value="$(arg launch_move_base)"/>
+    </include>
+
+    <include file="$(find bacchus_gazebo)/launch/thorvald.launch" >
+      <arg name="single_robot"      value="false"/>
+      <arg name="robot_name"        value="$(arg robot_name)_006" />
+      <arg name="robot_no"          value="006" />
+      <!-- <arg name="tf_prefix"         value="$(arg robot_name)_2/" /> -->
+      <arg name="x"                 value="$(arg X_INIT)" />
+      <arg name="y"                 value="-8.0" />
+      <arg name="z"                 value="$(arg Z_INIT)" />
+      <arg name="robot_model"       value="$(arg robot_model)"/>
+      <arg name="model_extras"      value="$(arg model_extras)"/>
+      <arg name="world_name"        value="$(arg world)"/>
+      <arg name="fake_localisation" value="$(arg fake_localisation)"/>
+      <arg name="nav_map_yaml"      value="$(arg nav_map_yaml)"/>
+      <arg name="rviz_config_file"  value="$(arg rviz_config_file)"/>
+      <arg name="paused"            value="$(arg paused)"/>
+      <arg name="use_sim_time"      value="$(arg use_sim_time)"/>
+      <arg name="gui"               value="$(arg gui)"/>
+      <arg name="debug"             value="$(arg debug)"/>
+      <arg name="verbose"           value="$(arg verbose)"/>
+      <arg name="launch_move_base"  value="$(arg launch_move_base)"/>
+    </include>
+
+    <include file="$(find bacchus_gazebo)/launch/thorvald.launch" >
+      <arg name="single_robot"      value="false"/>
+      <arg name="robot_name"        value="$(arg robot_name)_007" />
+      <arg name="robot_no"          value="007" />
+      <!-- <arg name="tf_prefix"         value="$(arg robot_name)_2/" /> -->
+      <arg name="x"                 value="$(arg X_INIT)" />
+      <arg name="y"                 value="-12.0" />
+      <arg name="z"                 value="$(arg Z_INIT)" />
+      <arg name="robot_model"       value="$(arg robot_model)"/>
+      <arg name="model_extras"      value="$(arg model_extras)"/>
+      <arg name="world_name"        value="$(arg world)"/>
+      <arg name="fake_localisation" value="$(arg fake_localisation)"/>
+      <arg name="nav_map_yaml"      value="$(arg nav_map_yaml)"/>
+      <arg name="rviz_config_file"  value="$(arg rviz_config_file)"/>
+      <arg name="paused"            value="$(arg paused)"/>
+      <arg name="use_sim_time"      value="$(arg use_sim_time)"/>
+      <arg name="gui"               value="$(arg gui)"/>
+      <arg name="debug"             value="$(arg debug)"/>
+      <arg name="verbose"           value="$(arg verbose)"/>
+      <arg name="launch_move_base"  value="$(arg launch_move_base)"/>
+    </include>
   </group>
 
 
 </launch>
-
 
 
 
